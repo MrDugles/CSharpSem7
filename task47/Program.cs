@@ -33,7 +33,7 @@ int InputWithValidation(string message)
             num = int.Parse(inputText);
             break;
         }
-        catch(FormatException)
+        catch (FormatException)
         {
             Console.WriteLine("Ошибка! Введите число.");
             continue;

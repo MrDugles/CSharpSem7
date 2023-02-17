@@ -88,11 +88,11 @@ void ColsAverage(int[,] thisArr)
     double result = 0;
     Console.WriteLine();
     Console.Write("Average |");
-    for (int i = 0; i < rows; i++)
+    for (int i = 0; i < cols; i++)
     {
-        for (int j = 0; j < cols; j++)
+        for (int j = 0; j < rows; j++)
         {
-            summ += thisArr[j,i];
+            summ += thisArr[j, i];
         }
         result = summ / (rows * 1.0);
         Console.Write("{0, 7}{1,7}", result, "|");
